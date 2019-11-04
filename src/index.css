@@ -14,18 +14,15 @@ body {
 a:hover {
 	text-decoration: none;
 }
-#prof-pic {
-	width: 30%;
-	margin: auto;
-	display: block;
-}
 .contain {
 	color: whitesmoke;
-	width: 70%;
+	border: #9999 solid;
+	border-radius: 3px;
+	width: 50%;
 	display: block;
 	margin: auto;
-	border: whitesmoke solid;
 	margin-bottom: 5em;
+	padding: 1.5em;
 }
 #main-container {
 	width: 100%;
@@ -39,171 +36,50 @@ a:hover {
 	background-position: center;
 	background-attachment: fixed;
 }
-.main-title {
-	font-family: 'Love Ya Like A Sister', cursive;
-	font-size: 1.75em;
-	/* font-weight: bold; */
-	text-align: center;
+.prof-pic {
+	width: 30%;
 	display: block;
-	line-height: 1;
-	margin-bottom: 0.75em;
-	letter-spacing: 0.05em;
+	margin: auto;
+	margin-top: 1em;
+	border: whitesmoke solid 2px;
+	border-radius: 2px;
+}
+.pic-holder {
+	text-align: left;
 }
 .title {
 	font-size: 1.25em;
 	font-weight: bold;
-	text-align: center;
-	display: block;
 	line-height: 1;
-	margin: 1em;
 	letter-spacing: 0.05em;
 }
-.subtitle {
-	color: #a3a3c2;
-	font-family: 'Montserrat', sans-serif;
-	font-family: 'Love Ya Like A Sister', cursive;
-	font-size: 1em;
-	font-weight: bold;
-	text-align: center;
-	display: block;
-	letter-spacing: 1px;
-	padding-bottom: 1em;
-}
-.blurb, .list-blurb {
-	margin: 1em;
+.blurb {
+	padding-top: 1em; 
 	font-size: .9em;
-	text-align: center;
 }
-.info-title {
-	font-weight: bold;
-}
-.info {
-	padding-left: 10px;
-}
-.about-img, .blurb {
+.title, .blurb {
+	text-align: left;
+	display: block;
+	margin: auto;
 	width: 90%;
-	display: block;
+}
+.carousel-item {
+}
+.carousel-slide {
+	width: 50%;
 	margin: auto;
-}
-.about-img {
-	padding: 0.5em 0;
-}
-.btn-white-outline {
-	color: whitesmoke;
-	border-color: whitesmoke;
-}
-.btn-black-outline {
-	color: black;
-	border-color: black;
-}
-.btn-white-outline, .btn-black-outline {
-	font-family: 'Blinker', sans-serif;
-	font-family: 'Finger Paint', cursive;
-	text-align: center;
-	border-radius: 50px;
-	border-width: 2px;
-	background-color: transparent;
-	transition: background-color 200ms, color 200ms;
-}
-.btn-white-outline:hover {
-	background-color: whitesmoke;
-	border-color: whitesmoke;
-	color: black;
-	cursor: pointer; 
-}
-.btn-black-outline:hover {
-	background-color: black;
-	border-color: black;
-	color: white;
-  cursor: pointer; 
-}
-.btn-schedule,
-.btn-buy,
-.btn-submit {
-	height: 3em;
-	padding: 0 1em;
-	margin-top: 1.1em;
-}
-.btn-schedule {
 	display: block;
-	margin: auto;
-	margin-top: 2em;
+	margin-top: 1em;
+	border: whitesmoke solid 2px;
+	border-radius: 2px;
 }
-.btn-submit {
-	display: block;
-	margin: auto;
-}
-#home-register-btn:hover,
-.btn-buy:hover {
-	background-color: #ff66ff;
-	border-color: #ff66ff;
-  color: white;
-  cursor: pointer; 
-}
-
-ul li {
-	list-style: none;
-}
-.input {
-	color: black;
-	border: solid #d1d1e0;
-	border-width: .05em;
-	border-radius: 2.5px;
-	display: block;
-	margin: .75em auto;
-	width: 11.5em;
-	padding: 10px 10px;
-}
-.message-box {
-	height: 10em;
-}
-
 
 /* MEDIA QUERIES */
 @media (min-width: 1000px) {
-	.logo {
-		display: block;
-	}
-	.super-splash-bros {
-		display: none;
-	}
-}
-@media (min-width: 900px) {
-	#home-title {
-		font-size: 2em;
-	}
-	#home-subtitle,
-	#home-subtitle-2 {
-		font-size: 1em;
-	}
-	.btn-schedule,
-	.btn-buy,
-	.btn-submit {
-		font-size: 1.25em;
-	}
-	.info {
-		padding-left: 150px;
-		padding-right: 150px;
-	}
-	.sign-up-img {
-		float: right;
-		margin-right: 200px;
-		width: 250px;
-		height: 250px;
-	}
-	.map-container {
-		height: 20em;
-	}
-	.main-title {
-		font-size: 3em;
-	}
 	.title {
 		font-size: 2em;
 	}
-	.subtitle {
-		font-size: 1.5em;
-	}
-	.blurb, .list-blurb {
+	.blurb {
 		font-size: 1em;
 	}
 	.input {
@@ -211,8 +87,7 @@ ul li {
 	}
 }
 @media (min-width: 700px) {
-	.about-img, .blurb {
+	.title, .blurb {
 		width: 50%;
 	}
 }
-
