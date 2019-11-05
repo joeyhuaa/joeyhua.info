@@ -63,10 +63,10 @@ function Home() {
 				<span className="blurb">I produce hip hop music and beats under the name Joey Portgas.</span>
 			</div>
 			<div className="contain">
-				<span className="title">Photos</span>
+				<span className="title">Photos/Edits</span>
 				<div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						{/* <div class="carousel-item active">
 							<img class="carousel-slide" src="../img/tylerincar.jpg"></img>
 						</div>
 						<div class="carousel-item">
@@ -74,8 +74,8 @@ function Home() {
 						</div>
 						<div class="carousel-item">
 							<img class="carousel-slide" src="../img/tyleroncar.jpg"></img>
-						</div>
-						<div class="carousel-item">
+						</div> */}
+						<div class="carousel-item active">
 							<img class="carousel-slide" src="../img/tylerbluegreenblack.jpg"></img>
 						</div>
 						<div class="carousel-item">
