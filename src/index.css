@@ -53,11 +53,11 @@ a:hover {
 	line-height: 1;
 	letter-spacing: 0.05em;
 }
-.blurb {
+.info {
 	padding-top: 1em; 
 	font-size: .9em;
 }
-.title, .blurb {
+.title, .info {
 	text-align: left;
 	display: block;
 	margin: auto;
@@ -79,7 +79,7 @@ a:hover {
 	.title {
 		font-size: 2em;
 	}
-	.blurb {
+	.info {
 		font-size: 1em;
 	}
 	.input {
@@ -87,7 +87,7 @@ a:hover {
 	}
 }
 @media (min-width: 700px) {
-	.title, .blurb {
+	.title, .info {
 		width: 50%;
 	}
 }
