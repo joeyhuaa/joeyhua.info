@@ -24,7 +24,7 @@ function Home() {
 					}}
 				/>
 				<Blurb 
-					content="Welcome to my webpage! I'm Joey, a student at UC Davis studying managerial economics and statistics."
+					content="Welcome to my webpage! I'm Joey, a student at UC Davis studying statistics."
 				/>
 				<Blurb 
 					content="I love creating things. Especially websites, designs, and music. My love for creation has been a vital part of me since I was a kid drawing 2-D video game levels on printer paper...the good ol' days..." 
