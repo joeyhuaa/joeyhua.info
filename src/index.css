@@ -14,27 +14,29 @@ body {
 a:hover {
 	text-decoration: none;
 }
-.contain {
-	color: whitesmoke;
-	border: #9999 solid;
-	border-radius: 3px;
-	width: 50%;
-	display: block;
-	margin: auto;
-	margin-bottom: 5em;
-	padding: 1.5em;
-}
-#main-container {
+#viewport {
+	text-align: center; /* this is supposed to center the navbar no? */
+	border: green solid 5px;
 	width: 100%;
 	margin: auto;
 	display: block;
-	padding-top: 5em;
 	padding-bottom: 50em;
 	height: 100%;
 	background-image: url(redpurpflower.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	border: yellow solid 10px;
+}
+.section {
+	color: whitesmoke;
+	border: #9999 solid;
+	border-radius: 3px;
+	width: 50%;
+	display: block;
+	text-align: center;
+	margin: 5em auto 15em auto;
+	padding: 1.5em;
 }
 .prof-pic {
 	width: 30%;
