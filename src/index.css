@@ -16,7 +16,6 @@ a:hover {
 }
 #viewport {
 	text-align: center; /* this is supposed to center the navbar no? */
-	border: green solid 5px;
 	width: 100%;
 	margin: auto;
 	display: block;
@@ -26,7 +25,7 @@ a:hover {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	border: yellow solid 10px;
+	border: rgb(26, 2, 22) solid .08px;
 }
 .section {
 	color: whitesmoke;
