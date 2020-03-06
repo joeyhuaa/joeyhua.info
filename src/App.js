@@ -16,15 +16,18 @@ class App extends React.Component {
           <Subtitle
             link1 = {{
               url: "https://www.linkedin.com/in/joey-hua-9ab456175/",
-              text: "linkedin "
+              img: "./img/linkedin.png",
+              class: "color-reg"
             }}
             link2 = {{
               url: "https://github.com/joeyhuaa",
-              text: " github "
+              img: "./img/github.svg",
+              class: "color-comp"
             }}
             link3 = {{
               url: "https://medium.com/@joeyhua",
-              text: " blog"
+              img: "./img/medium.png",
+              class: "color-comp"
             }}
           />
           <Blurb 
@@ -46,23 +49,26 @@ class App extends React.Component {
           <Subtitle
             link1 = {{
               url: "https://www.youtube.com/channel/UC6AtGBkG3wnAHDJB7mh3urw",
-              text: "youtube " 
+              img: "../img/yt.png",
+              class: "color-reg"
             }}
             link2 = {{
-              url: "https://soundcloud.com/joeyportgas",
-              text: " soundcloud "
+              url: "https://www.beatstars.com/joeyportgas/feed",
+              img: "../img/spotify.png",
+              class: "color-reg"
             }}
             link3 = {{
-              url: "https://www.beatstars.com/joeyportgas/feed",
-              text: " beatstore"
+              url: "https://soundcloud.com/joeyportgas",
+              img: "../img/sc.png",
+              class: "color-reg"
             }}
           />
-          <div className="pic-holder">
-            <img className="prof-pic" src="../img/joeyportgas.png"></img>
-          </div>
           <Blurb
             content="I produce hip hop music and beats under the name Joey Portgas."
           />
+          <div className="video-container">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/i6y_2WwnLoI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
         <div className="section" id='section4'>
           <span className="title">Photos/Edits</span>

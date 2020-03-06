@@ -1,0 +1,8 @@
+img {
+  margin-right: 10px;
+}
+
+/* complementary color */
+.color-comp {
+  filter: invert(100%);
+}

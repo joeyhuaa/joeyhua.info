@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 
 // smooth scroll! 
-import { Link, animateScroll as scroll } from 'react-scroll' 
+import {Link} from 'react-scroll' 
 
 function NavBar() {
   return (
