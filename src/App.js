@@ -53,7 +53,7 @@ class App extends React.Component {
               class: "color-reg"
             }}
             link2 = {{
-              url: "https://www.beatstars.com/joeyportgas/feed",
+              url: "https://open.spotify.com/artist/0YXD8IkiTAK50YEczAOv4T?si=Wk5P9BJEQNGk29FvW3w4Eg",
               img: "../img/spotify.png",
               class: "color-reg"
             }}
