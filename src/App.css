@@ -1,33 +1,107 @@
-/* .App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Finger+Paint|Love+Ya+Like+A+Sister|Blinker|Montserrat|Special+Elite&display=swap");
+* {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+	color: whitesmoke;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover {
+	text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+div {
+	margin: 0;
+	padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+nav {
+  margin: auto;
+  padding-top: 1em;
+  z-index: 10;
+  position: fixed;
+}
+
+nav li {
+  display: inline;
+  margin: 1em;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+nav li > .active {
+  border-bottom: rgba(240, 37, 115, 0.925) solid 2px;
+}
+
+#viewport {
+	background-image: url(redpurpflower.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center; /* this is supposed to center the navbar no? */
+	width: 100%;
+	margin: auto;
+	display: block;
+	padding-bottom: 50em;
+	height: 100%;
+	border: rgb(26, 2, 22) solid .08px;
+}
+
+.section {
+	color: whitesmoke;
+	border: #9999 solid;
+	border-radius: 3px;
+	width: 50%;
+	display: block;
+	text-align: center;
+	margin: 5em auto 15em auto;
+	padding: 1.5em;
+}
+
+.prof-pic {
+	width: 30%;
+	display: block;
+	margin: auto;
+	margin-top: 1em;
+	border: whitesmoke solid 2px;
+	border-radius: 2px;
+}
+
+.pic-holder {
+	text-align: left;
+}
+
+.title {
+	font-size: 1.25em;
+	font-weight: bold;
+	line-height: 1;
+	letter-spacing: 0.05em;
+}
+
+.info {
+	padding-top: 1em; 
+	font-size: .9em;
+}
+
+.title, .info {
+	text-align: left;
+	display: block;
+	margin: auto;
+	width: 90%;
+}
+
+.carousel-slide {
+	width: 50%;
+	margin: auto;
+	display: block;
+	margin-top: 1em;
+	border: whitesmoke solid 2px;
+	border-radius: 2px;
+}
+
+.video-container {
+	margin-top: 1em;
+}

@@ -1,6 +1,6 @@
 import React from "react"
  
-function PhotoCarousel() {
+export default function PhotoCarousel() {
   return (
     <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -31,5 +31,3 @@ function PhotoCarousel() {
     </div>
   )
 }
-
-export default PhotoCarousel

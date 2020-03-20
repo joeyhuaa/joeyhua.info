@@ -1,85 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Finger+Paint|Love+Ya+Like+A+Sister|Blinker|Montserrat|Special+Elite&display=swap");
-* {
-	margin: 0;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
+/* SECTION ANIMATIONS */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-body {
-	background-image: url(redpurpflower.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-#viewport {
-	text-align: center; /* this is supposed to center the navbar no? */
-	width: 100%;
-	margin: auto;
-	display: block;
-	padding-bottom: 50em;
-	height: 100%;
-	border: rgb(26, 2, 22) solid .08px;
-}
-
-.section {
-	color: whitesmoke;
-	border: #9999 solid;
-	border-radius: 3px;
-	width: 50%;
-	display: block;
-	text-align: center;
-	margin: 5em auto 15em auto;
-	padding: 1.5em;
-}
-
-.prof-pic {
-	width: 30%;
-	display: block;
-	margin: auto;
-	margin-top: 1em;
-	border: whitesmoke solid 2px;
-	border-radius: 2px;
-}
-
-.pic-holder {
-	text-align: left;
-}
-
-.title {
-	font-size: 1.25em;
-	font-weight: bold;
-	line-height: 1;
-	letter-spacing: 0.05em;
-}
-
-.info {
-	padding-top: 1em; 
-	font-size: .9em;
-}
-
-.title, .info {
-	text-align: left;
-	display: block;
-	margin: auto;
-	width: 90%;
-}
-
-.carousel-slide {
-	width: 50%;
-	margin: auto;
-	display: block;
-	margin-top: 1em;
-	border: whitesmoke solid 2px;
-	border-radius: 2px;
-}
-
-.video-container {
-	margin-top: 1em;
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* MEDIA QUERIES */
