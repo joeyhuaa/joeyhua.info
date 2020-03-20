@@ -18,22 +18,26 @@ div {
 	padding: 0;
 }
 
-nav {
-  margin: auto;
-  padding-top: 1em;
-  z-index: 10;
-  position: fixed;
+nav ul {
+	padding: 0;
+	padding-top: 1em;
+	margin-left: 35%;
+	margin-right: 35%;
+	padding-bottom: .5em;
+	border-bottom: solid rgba(189, 174, 174, 0.671) 1px;
 }
 
 nav li {
   display: inline;
-  margin: 1em;
+	margin: 1em;
+	margin-left: 0;
+	padding-left: 0;
   color: whitesmoke;
-  cursor: pointer;
+	cursor: pointer;
 }
 
 nav li > .active {
-  border-bottom: rgba(240, 37, 115, 0.925) solid 2px;
+	border-bottom: rgba(240, 37, 115, 0.925) solid 2px;
 }
 
 #viewport {
@@ -41,20 +45,18 @@ nav li > .active {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	text-align: center; /* this is supposed to center the navbar no? */
-	width: 100%;
-	margin: auto;
-	display: block;
 	padding-bottom: 50em;
 	height: 100%;
+	width: 100%;
 	border: rgb(26, 2, 22) solid .08px;
+	text-align: center;
 }
 
 .section {
 	color: whitesmoke;
-	border: #9999 solid;
-	border-radius: 3px;
-	width: 50%;
+	/* border: #9999 solid;
+	border-radius: 3px; */
+	width: 40%;
 	display: block;
 	text-align: center;
 	margin: 5em auto 15em auto;

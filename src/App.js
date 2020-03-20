@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import Subtitle from "./components/Subtitle"
@@ -11,17 +11,7 @@ import Fade from "./components/Fade"
 
 
 /** TO-DO **/
-/* if another section link clicked:
-   unmount current section and mount the new section
-   else:
-   do nothing
-*/
 
-/*
-.
-.
-.
-*/
 
 /** BUGS **/
 
@@ -30,6 +20,16 @@ import Fade from "./components/Fade"
 let sectionContentsMap = [
   {
     key: 0,
+    id: 'welcome',
+    title: 'Welcome',
+    content: 
+      <div style={{}}>
+        <img src='../img/prof-pic-square.jpg' width='300' height='300'></img>
+        <Blurb content="Hi! I'm Joey. Welcome to my website!"></Blurb>
+      </div>
+  },
+  {
+    key: 1,
     id: 'about',
     title: 'About',
     subtitle: 
@@ -53,22 +53,9 @@ let sectionContentsMap = [
     content: 
       <div>
         <Blurb 
-          content="Welcome to my webpage! I'm Joey, a student at UC Davis studying Managerial Economics."
-        />
-        <Blurb 
-          content="I love creating things. Especially websites, designs, and music. My love for creation has been a vital part of me since I was a kid drawing 2-D video game levels on printer paper...the good ol' days..." 
-        />
-        <Blurb
-          content="You can find some examples of my best work below."
+          content="I'm currently an undergraduate studying Economics at UC Davis. I love creating things. Especially music, websites, and photo edits. My love for creation has been a vital part of me since I was a kid drawing 2-D video game levels on printer paper...the good ol' days..." 
         />
       </div>
-  },
-  {
-    key: 1,
-    id: 'design',
-    title: 'Design',
-    subtitle: <Blurb content='Done by me!'/>,
-    content: <DesignCarousel />
   },
   {
     key: 2,
@@ -95,18 +82,25 @@ let sectionContentsMap = [
     content: 
       <div>
         <Blurb
-          content="I produce hip hop music and beats under the name Joey Portgas."
+          content="Check me out!"
         />
         <div className="video-container">
           <iframe src="https://open.spotify.com/embed/track/0DjAAWZVI1d6NZ7YnFgHIJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
-  }, 
+  },
   {
     key: 3,
+    id: 'design',
+    title: 'Design',
+    subtitle: <Blurb content='Done by me!'/>,
+    content: <DesignCarousel />
+  }, 
+  {
+    key: 4,
     id: 'art',
     title: 'Art',
-    subtitle: <Blurb content='Done by me!' />,
+    subtitle: <Blurb content='As you can see, I like colors.' />,
     content: <PhotoCarousel />
   }
 ]
@@ -115,6 +109,11 @@ export default function App() {
   // using hooks to declare state variables 
   let [sectionIndex, setSectionIndex] = useState(0)
   let [show, setShow] = useState(true)
+
+  // calls on mount & unmount
+  useEffect(() => {
+    console.log(navLinks.length)
+  })
 
   // event handler
   let handleClick = (index) => {
@@ -147,6 +146,7 @@ export default function App() {
           <li>{navLinks[1]}</li>
           <li>{navLinks[2]}</li>
           <li>{navLinks[3]}</li>
+          <li>{navLinks[4]}</li>
         </ul>
       </nav>
 
