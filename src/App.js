@@ -24,7 +24,7 @@ let sectionContentsMap = [
     title: 'Welcome',
     content: 
       <div style={{}}>
-        <img src='../img/prof-pic-square.jpg' width='300' height='300'></img>
+        <img src='./img/prof-pic-square.jpg' width='300' height='300'></img>
         <Blurb content="Hi! I'm Joey. Welcome to my website!"></Blurb>
       </div>
   },
