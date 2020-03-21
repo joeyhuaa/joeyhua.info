@@ -24,7 +24,7 @@ let sectionContentsMap = [
     title: 'Welcome',
     content: 
       <div style={{}}>
-        <img src='./img/prof-pic-square.jpg' width='300' height='300'></img>
+        <img src='../img/prof-pic-square.png' width='300' height='300'></img>
         <Blurb content="Hi! I'm Joey. Welcome to my website!"></Blurb>
       </div>
   },
@@ -65,17 +65,17 @@ let sectionContentsMap = [
       <Subtitle
         link1 = {{
           url: "https://www.youtube.com/channel/UC6AtGBkG3wnAHDJB7mh3urw",
-          img: "../img/yt.png",
+          img: "./img/yt.png",
           class: "color-reg"
         }}
         link2 = {{
           url: "https://open.spotify.com/artist/0YXD8IkiTAK50YEczAOv4T?si=Wk5P9BJEQNGk29FvW3w4Eg",
-          img: "../img/spotify.png",
+          img: "./img/spotify.png",
           class: "color-reg"
         }}
         link3 = {{
           url: "https://soundcloud.com/joeyportgas",
-          img: "../img/sc.png",
+          img: "./img/sc.png",
           class: "color-reg"
         }}
       />,
