@@ -8,6 +8,7 @@ import PhotoCarousel from "./components/PhotoCarousel"
 import NavLink from "./components/NavLink"
 import Section from "./components/Section"
 import Fade from "./components/Fade"
+import ReactAudioPlayer from 'react-audio-player';
 
 
 /** TO-DO **/
@@ -53,7 +54,7 @@ let sectionContentsMap = [
     content: 
       <div>
         <Blurb 
-          content="I'm currently an undergraduate studying Economics at UC Davis. I love creating things. Especially music, websites, and photo edits. My love for creation has been a vital part of me since I was a kid drawing 2-D video game levels on printer paper...the good ol' days..." 
+          content="I'm currently an undergraduate studying Managerial Economics and Computer Science at UC Davis. I love creating things, especially websites and music. My love for creation has been a vital part of who I am since I was a kid drawing 2-D video game levels on printer paper." 
         />
       </div>
   },
@@ -69,12 +70,12 @@ let sectionContentsMap = [
           class: "color-reg"
         }}
         link2 = {{
-          url: "https://open.spotify.com/artist/0YXD8IkiTAK50YEczAOv4T?si=Wk5P9BJEQNGk29FvW3w4Eg",
+          url: "https://open.spotify.com/album/2KnFT8WN7cDYwq2HN6ikpb?si=NI5K93lTRGui2GKv1kmGhQ",
           img: "./img/spotify.png",
           class: "color-reg"
         }}
         link3 = {{
-          url: "https://soundcloud.com/joeyportgas",
+          url: "https://soundcloud.com/jportgas",
           img: "./img/sc.png",
           class: "color-reg"
         }}
@@ -85,23 +86,12 @@ let sectionContentsMap = [
           content="Check me out!"
         />
         <div className="video-container">
-          <iframe src="https://open.spotify.com/embed/track/0DjAAWZVI1d6NZ7YnFgHIJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe src="https://open.spotify.com/embed/track/2Ujui4dovTahPFOoZjHcUr" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <br />
+          <br />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6C1CKdaz-yA?start=17" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-  },
-  {
-    key: 3,
-    id: 'design',
-    title: 'Design',
-    subtitle: <Blurb content='Done by me!'/>,
-    content: <DesignCarousel />
-  }, 
-  {
-    key: 4,
-    id: 'art',
-    title: 'Art',
-    subtitle: <Blurb content='As you can see, I like colors.' />,
-    content: <PhotoCarousel />
   }
 ]
 
@@ -157,6 +147,12 @@ export default function App() {
       <Fade show={show}>
         {currSection}
       </Fade>
+
+      <ReactAudioPlayer 
+        src={"dragons_breath.mp3"}
+        autoPlay
+        controls
+      />
     </div>
   )
 }
