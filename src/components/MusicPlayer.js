@@ -53,8 +53,8 @@ export default function MusicPlayer({songs}) {
   };
 
   let button = isPlaying ?  
-    <img id='pButton' src={pause} ref={pButton} onClick={playPause} /> :
-    <img id='pButton' src={play} ref={pButton} onClick={playPause} />
+    <img id='pButton' src={pause} alt='button' ref={pButton} onClick={playPause} /> :
+    <img id='pButton' src={play} alt='button' ref={pButton} onClick={playPause} />
 
   return (
     <div id='music-player'>
@@ -62,6 +62,7 @@ export default function MusicPlayer({songs}) {
         <source src={currentSong.file} type='audio/mpeg'></source>
       </audio>
 
+      <span className='player-info'>Stream my music while exploring the site</span>
       <img src={currentSong.art} width={30} alt='cover art' />
       <span className='song-title'>
         {currentSong.title}
