@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 import Subtitle from "./components/Subtitle"
-import Blurb from "./components/Blurb"
 import NavLink from "./components/NavLink"
 import Section from "./components/Section"
 import Fade from "./components/Fade"
@@ -84,7 +83,7 @@ export default function App() {
       setTimeout(function() {
         setSectionIndex(sectionIndex = index)
         setShow(show => !show) // mount the new section
-      }, 1000)
+      }, 500)
     } 
   }
 
