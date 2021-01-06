@@ -8,7 +8,17 @@ import PhotoCarousel from "./components/PhotoCarousel"
 import NavLink from "./components/NavLink"
 import Section from "./components/Section"
 import Fade from "./components/Fade"
-import ReactAudioPlayer from 'react-audio-player';
+import MusicPlayer from './components/MusicPlayer'
+
+import supernova from './assets/supernova.mp3'
+import soul_dance from './assets/soul_dance.mp3'
+import datura from './assets/datura.mp3'
+
+import supernova_art from './assets/supernova.jpg'
+import soulfection_art from './assets/soulfection.jpg'
+import datura_art from './assets/datura.png' 
+
+import prof_pic from './assets/prof-pic-square.png';
 
 
 /** TO-DO **/
@@ -24,8 +34,8 @@ let sectionContentsMap = [
     id: 'welcome',
     title: 'Welcome',
     content: 
-      <div style={{}}>
-        <img src='../img/prof-pic-square.png' width='300' height='300'></img>
+      <div>
+        <img src={prof_pic} width='300' height='300'></img>
         <Blurb content="Hi! I'm Joey. Welcome to my website!"></Blurb>
       </div>
   },
@@ -37,17 +47,17 @@ let sectionContentsMap = [
       <Subtitle
         link1 = {{
           url: "https://www.linkedin.com/in/joeywhua/",
-          img: "./img/linkedin.png",
+          img: "./assets/linkedin.png",
           class: "color-reg"
         }}
         link2 = {{
           url: "https://github.com/joeyhuaa",
-          img: "./img/github.svg",
+          img: "./assets/github.svg",
           class: "color-comp"
         }}
         link3 = {{
           url: "https://medium.com/@joeyhua",
-          img: "./img/medium.png",
+          img: "./assets/medium.png",
           class: "color-comp"
         }}
       />,
@@ -66,17 +76,17 @@ let sectionContentsMap = [
       <Subtitle
         link1 = {{
           url: "https://www.youtube.com/channel/UC6AtGBkG3wnAHDJB7mh3urw",
-          img: "./img/yt.png",
+          img: "./assets/yt.png",
           class: "color-reg"
         }}
         link2 = {{
           url: "https://open.spotify.com/album/2KnFT8WN7cDYwq2HN6ikpb?si=NI5K93lTRGui2GKv1kmGhQ",
-          img: "./img/spotify.png",
+          img: "./assets/spotify.png",
           class: "color-reg"
         }}
         link3 = {{
           url: "https://soundcloud.com/jportgas",
-          img: "./img/sc.png",
+          img: "./assets/sc.png",
           class: "color-reg"
         }}
       />,
@@ -102,10 +112,9 @@ export default function App() {
 
   // calls on mount & unmount
   useEffect(() => {
-    console.log(navLinks.length)
   })
 
-  // event handler
+  // functions
   let handleClick = (index) => {
     if (sectionIndex !== index) {
       setShow(show => !show) // unmount the current section
@@ -116,6 +125,7 @@ export default function App() {
     } 
   }
 
+  // variables
   let section = sectionContentsMap[sectionIndex]
   let currSection =
     <Section 
@@ -135,23 +145,19 @@ export default function App() {
           <li>{navLinks[0]}</li>
           <li>{navLinks[1]}</li>
           <li>{navLinks[2]}</li>
-          <li>{navLinks[3]}</li>
-          <li>{navLinks[4]}</li>
         </ul>
       </nav>
 
-      {/* <button onClick={() => setShow(show => !show)}>
-        {show ? 'hide' : 'show'}
-      </button> */}
-      
       <Fade show={show}>
         {currSection}
       </Fade>
 
-      <ReactAudioPlayer 
-        src={"dragons_breath.mp3"}
-        autoPlay
-        controls
+      <MusicPlayer
+        songs={[
+          {file: supernova, title: `Supernova`, art: supernova_art},
+          {file: soul_dance, title: `Soul Dance`, art: soulfection_art},
+          {file: datura, title: `DATURA (prod./feat. WASTELAND DOCTOR)`, art: datura_art}
+        ]}
       />
     </div>
   )
