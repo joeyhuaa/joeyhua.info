@@ -32,13 +32,11 @@ let sectionContentsMap = [
     id: 'welcome',
     title: 'Welcome',
     content: 
-      <div>
+      <div className='section'>
         <RandomPic pics={[prof_pic,headlightsnight,tylerbgb,tylerbp,tylerog,tylerrb,soulfection_art]} />
-        <Blurb 
-          content="Hi! I'm Joey. Welcome to my website. I'm currently a third-year undergrad at UC Davis. 
-          I enjoy programming and music production. I hope you enjoy viewing my work on this site!"
-        >
-        </Blurb>
+        <h1 style={{marginTop:'1em'}}>Hi, I'm Joey.</h1>
+        <span>Welcome to my website.</span>
+        <span style={{fontSize:'12px'}}>[For best experience, stream my music below while exploring the site]</span>
       </div>
   },
   {
@@ -64,7 +62,7 @@ let sectionContentsMap = [
     //     }}
     //   />,
     content: 
-      <div>
+      <div className='section'>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6C1CKdaz-yA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/iBr_JZUCGpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>

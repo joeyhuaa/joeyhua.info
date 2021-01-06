@@ -9,6 +9,10 @@ body {
   color: whitesmoke;
 }
 
+h1{
+  font-weight: bold;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -29,6 +33,7 @@ nav ul {
   margin-right: 35%;
   padding-bottom: .5em;
   border-bottom: solid rgba(189, 174, 174, 0.671) 1px;
+  text-align: center;
 }
 
 nav li {
@@ -41,10 +46,6 @@ nav li {
   font-weight: bold;
 }
 
-nav li > .active {
-  border-bottom: rgba(240, 37, 115, 0.925) solid 2px;
-}
-
 #viewport {
   position: relative;
   background-image: url(redpurpflower.jpg);
@@ -55,32 +56,19 @@ nav li > .active {
   height: 100%;
   width: 100%;
   border: rgb(26, 2, 22) solid .08px;
-  text-align: center;
 }
 
 .section {
   color: whitesmoke;
-  /* border: #9999 solid;
-  border-radius: 3px; */
-  width: 40%;
-  display: block;
-  text-align: center;
-  margin: 5em auto 15em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em auto 10em auto;
+  /* height:500px; */
   padding: 1.5em;
   font-weight: bold;
-}
-
-.prof-pic {
-  width: 30%;
-  display: block;
-  margin: auto;
-  margin-top: 1em;
-  border: whitesmoke solid 2px;
-  border-radius: 2px;
-}
-
-.pic-holder {
-  text-align: left;
+  text-align:center;
+  overflow:hidden;
 }
 
 .title {
@@ -90,25 +78,11 @@ nav li > .active {
   letter-spacing: 0.05em;
 }
 
-.info {
-  padding-top: 1em; 
-  font-size: .9em;
-}
-
 .title, .info {
   text-align: left;
   display: block;
   margin: auto;
   width: 90%;
-}
-
-.carousel-slide {
-  width: 50%;
-  margin: auto;
-  display: block;
-  margin-top: 1em;
-  border: whitesmoke solid 2px;
-  border-radius: 2px;
 }
 
 .video-container {
@@ -120,16 +94,15 @@ nav li > .active {
 }
 
 #music-player {
-  position: fixed; 
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed; 
+  bottom: 0;
   background-color: whitesmoke;
   width: 100%;
   height: 55px;
+  padding: 0 2em 0 2em;
 }
 
 .player-info {
@@ -145,6 +118,7 @@ nav li > .active {
   color:black;
   font-size: 12px;
   width: 30px;
+  text-align: center;
 }
 
 .song-title{
@@ -158,6 +132,9 @@ nav li > .active {
   height: 10px;
   background: rgb(158, 157, 157);
   border-radius: 15px;
+}
+#timeline:hover{
+  cursor:pointer;
 }
 
 #playhead{
@@ -178,4 +155,16 @@ nav li > .active {
 }
 #pButton:hover{
   cursor:pointer;
+}
+
+@media (max-width: 1000px) {
+  .player-info {
+    display:none;
+  }
+}
+
+@media (max-width: 650px) {
+  #timeline {
+    width: 200px;
+  }
 }

@@ -1,9 +1,8 @@
 import React from 'react'
 
-export default function Section({id, title, subtitle, content}) {
+export default function Section({id, subtitle, content}) {
   return (
-    <div className='section' id={id}>
-      {/* <span className='title'>{title}</span> */}
+    <div id={id}>
       {subtitle}
       {content}
     </div>

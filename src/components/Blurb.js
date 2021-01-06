@@ -2,7 +2,13 @@ import React from "react"
 
 function Blurb(props) {
   return (
-    <span style={{textAlign:'center'}} className="info">{props.content}</span>
+    <div style={{
+      width:'40%', 
+      fontSize:'.9em', 
+      paddingTop:'1em'
+    }}>
+      <div>{props.content}</div>
+    </div>
   )
 }
 export default Blurb
