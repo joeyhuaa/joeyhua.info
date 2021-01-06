@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-import Subtitle from "./components/Subtitle"
 import NavLink from "./components/NavLink"
 import Section from "./components/Section"
 import Fade from "./components/Fade"
@@ -28,8 +27,8 @@ import tylerrb from './assets/tylerredblkpoints.jpg'
 let sectionContentsMap = [
   {
     key: 0,
-    id: 'welcome',
-    title: 'Welcome',
+    id: 'home',
+    title: 'Home',
     content: 
       <div className='section'>
         <RandomPic pics={[prof_pic,headlightsnight,tylerbgb,tylerbp,tylerog,tylerrb,soulfection_art]} />
@@ -40,26 +39,81 @@ let sectionContentsMap = [
   },
   {
     key: 1,
+    id: 'about',
+    title: 'About',
+    content:
+     <div className='section'>
+       <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
+       <h5><u>About Me</u></h5>
+        <p>
+          I'm currently an undergraduate student at UC Davis studying Computer Science and Managerial Economics. I enjoy web development, especially 
+          with ReactJS. Among my other interests are music production, audio engineering, video animation, and mountain biking. 
+        </p>
+        <br />
+        <h5><u>Resume</u></h5>
+        <div style={{fontWeight:'normal'}}>
+          <p>
+            Education: UC Davis | Class of 2022 | B.S. in Managerial Economics, Minor in CS
+          </p>
+          <p>
+            Skills:
+            <ul>
+              <li>Languages: HTML, CSS, JavaScript, Python, Ruby on Rails</li>
+              <li>Tools/Frameworks: React, Node, Git, Webpack, Bootstrap, D3.js, SVG</li>
+            </ul>
+          </p>
+          <p>
+            Experience:
+            <ul>
+              <li>
+                <u>Center for Educational Effectiveness at UC Davis</u> <i>(Apr 2020 — Present)</i>
+                <br />
+                <strong>Web Developer</strong>
+                <ul>
+                  <li>Designed user-friendly charts using React and D3.js to help professors glean meaningful insights from lecture recordings.</li>
+                  <li>Used NLP libraries to parse and extract insights from lecture recording transcripts in React and Ruby on Rails.</li>
+                  <li>Integrated Zoom API to fetch lecture recording data, using OAuth 2.0 for user authentication.</li>
+                  <li>Incorporated dynamic React front end into an existing Ruby on Rails application.</li>
+                </ul>
+              </li>
+              <li>
+                <u>HackDavis 2020</u> <i>(Jan 2020)</i>
+                <br />
+                <strong>Team Leader</strong>
+                <ul>
+                  <li>Led a team of 3 students to complete a laptop recommendation application in Python.</li>
+                  <li>Generated project ideas and encouraged open communication among team members.</li>
+                  <li>Assisted teammates with debugging code.</li>
+                </ul>
+              </li>
+              <li>
+                <u>University of California</u> <i>Nov 2019 — Mar 2020</i>
+                <br />
+                <strong>Student Assistant III</strong>
+                <ul>
+                  <li>Researched reasons why advocacy groups sued University of California over the SAT.</li>
+                  <li>Web scraped data on 3000+ Bay Area rental units, 1000+ used vehicles from Kelley Blue Book, and standardized test data from 56 Bay Area counties using Python.</li>
+                </ul>
+              </li>
+              <li>
+                <u>SSB Basketball Academy</u> <i>Jul 2019 — Dec 2019</i>
+                <br />
+                <strong>Web & Graphic Designer</strong>
+                <ul>
+                  <li>Designed responsive website using HTML, CSS, and React, and 4 flyers using Adobe Illustrator.</li>
+                  <li>Developed logo prototypes and integrated a new logo to create a more child-centered brand identity.</li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+     </div>
+  },
+  {
+    key: 2,
     id: 'projects',
     title: 'Projects',
-    // subtitle: 
-    //   <Subtitle
-    //     link1 = {{
-    //       url: "https://www.linkedin.com/in/joeywhua/",
-    //       img: "./assets/linkedin.png",
-    //       class: "color-reg"
-    //     }}
-    //     link2 = {{
-    //       url: "https://github.com/joeyhuaa",
-    //       img: "./assets/github.svg",
-    //       class: "color-comp"
-    //     }}
-    //     link3 = {{
-    //       url: "https://medium.com/@joeyhua",
-    //       img: "./assets/medium.png",
-    //       class: "color-comp"
-    //     }}
-    //   />,
     content: 
       <div className='section'>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/6C1CKdaz-yA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -104,8 +158,7 @@ export default function App() {
     <div id='viewport'>
       <nav>
         <ul>
-          <li>{navLinks[0]}</li>
-          <li>{navLinks[1]}</li>
+          {navLinks.map(link => <li>{link}</li>)}
         </ul>
       </nav>
 

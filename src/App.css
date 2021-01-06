@@ -64,7 +64,8 @@ nav li {
   font-weight: bold;
   text-align:center;
   overflow:hidden;
-  margin-top:2em;
+  margin: 2em auto 0 auto;
+  width: 700px;
 }
 
 .title {
@@ -121,6 +122,7 @@ nav li {
   color:black;
   font-size: 12px;
   font-weight: bold;
+  margin-left: 1em;
 }
 
 #timeline{
@@ -159,8 +161,14 @@ nav li {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   #timeline {
     width: 200px;
+  }
+  body {
+    font-size: .75em;
+  }
+  .section{
+    width: 400px;
   }
 }

@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 
 import play from '../assets/play.png'
 import pause from '../assets/pause.png'
@@ -8,6 +8,11 @@ export default function MusicPlayer({songs}) {
   let [isPlaying, setIsPlaying] = useState(false)
   let [currentSong, setCurrentSong] = useState(songs[Math.floor(Math.random() * songs.length)])
   let [currentTime, setCurrentTime] = useState(null)
+
+  useEffect(() => {
+    console.log(music.current.currentSrc)
+    console.log(music.current.src)
+  },[currentSong])
 
   let music = useRef(null)
   let playHead = useRef(null)
@@ -30,11 +35,20 @@ export default function MusicPlayer({songs}) {
     }
   }
 
+  let queueNextSong = () => {
+    let nextSong = songs[Math.floor(Math.random() * songs.length)]
+    if (nextSong === currentSong) queueNextSong()
+    else setCurrentSong(nextSong)
+  }
+
   let timeUpdate = () => {
     let playPercent = (music.current.currentTime / getDuration()) * getTimeLineWidth()
     playHead.current.style.marginLeft = playPercent + 'px'
     setCurrentTime(msString(getCurrentTime()))
-    if (getCurrentTime() === getDuration()) setIsPlaying(false)
+    if (getCurrentTime() === getDuration()) {
+      setIsPlaying(false)
+      queueNextSong()
+    }
   }
 
   let timeLineClicked = (e) => {
@@ -58,7 +72,7 @@ export default function MusicPlayer({songs}) {
 
   return (
     <div id='music-player'>
-      <audio id='music' ref={music} onTimeUpdate={timeUpdate}>
+      <audio id='music' key={currentSong.file} ref={music} onTimeUpdate={timeUpdate}>
         <source src={currentSong.file} type='audio/mpeg'></source>
       </audio>
 
