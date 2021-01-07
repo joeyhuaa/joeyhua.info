@@ -34,7 +34,7 @@ let sectionContentsMap = [
         <RandomPic pics={[prof_pic,headlightsnight,tylerbgb,tylerbp,tylerog,tylerrb,soulfection_art]} />
         <h1 style={{marginTop:'1em'}}>Hi, I'm Joey.</h1>
         <span>Welcome to my website.</span>
-        <span style={{fontSize:'12px'}}>[For best experience, stream my music below while exploring the site]</span>
+        <span id='homepage-note' style={{fontSize:'12px'}}>[For best experience, stream my music below while exploring the site]</span>
       </div>
   },
   {

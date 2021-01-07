@@ -26,14 +26,20 @@ div {
   padding: 0;
 }
 
+nav {
+  /* border: solid turquoise 2px; */
+  display: flex;
+  justify-content: center;
+}
+
 nav ul {
   padding: 0;
   padding-top: 1em;
-  margin-left: 35%;
-  margin-right: 35%;
   padding-bottom: .5em;
   border-bottom: solid rgba(189, 174, 174, 0.671) 1px;
   text-align: center;
+  /* width: 400px; */
+  width: 40%;
 }
 
 nav li {
@@ -86,6 +92,10 @@ nav li {
   margin-top: 1em;
 }
 
+#random-pic{
+  height: 300px;
+  width: 300px;
+}
 #random-pic:hover{
   cursor:pointer;
 }
@@ -170,5 +180,30 @@ nav li {
   }
   .section{
     width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  #random-pic{
+    height: 200px;
+    width: 200px;
+  }
+
+  #homepage-note{
+    display: none;
+  }
+
+  h1{
+    font-size: 25px;
+  }
+
+  .section{
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  nav li {
+    font-size:10px;
   }
 }

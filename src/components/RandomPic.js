@@ -10,6 +10,6 @@ export default function RandomPic({pics}) {
   }
 
   return (
-    <img id='random-pic' src={currentPic} alt='pic' width='300' height='300' onClick={changePic} />
+    <img id='random-pic' src={currentPic} alt='pic' onClick={changePic} />
   )
 }
