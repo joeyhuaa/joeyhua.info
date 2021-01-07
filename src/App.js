@@ -87,7 +87,7 @@ let sectionContentsMap = [
                 </ul>
               </li>
               <li>
-                <u>University of California</u> <i>Nov 2019 — Mar 2020</i>
+                <u>University of California</u> <i>(Nov 2019 — Mar 2020)</i>
                 <br />
                 <strong>Student Assistant III</strong>
                 <ul>
@@ -96,7 +96,7 @@ let sectionContentsMap = [
                 </ul>
               </li>
               <li>
-                <u>SSB Basketball Academy</u> <i>Jul 2019 — Dec 2019</i>
+                <u>SSB Basketball Academy</u> <i>(Jul 2019 — Dec 2019)</i>
                 <br />
                 <strong>Web & Graphic Designer</strong>
                 <ul>
