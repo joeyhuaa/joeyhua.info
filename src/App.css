@@ -200,6 +200,18 @@ nav li {
   .section{
     width: 90%;
   }
+
+  #music-player{
+    justify-content: space-between;
+  }
+
+  #timeline, .timestamp{
+    display: none;
+  }
+
+  .song-title{
+    flex: 2;
+  }
 }
 
 @media (max-width: 320px) {
