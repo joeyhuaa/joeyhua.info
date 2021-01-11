@@ -21,6 +21,10 @@ iframe{
   margin-bottom: 150px;
 }
 
+a {
+  color: whitesmoke;
+}
+
 div {
   margin: 0;
   padding: 0;

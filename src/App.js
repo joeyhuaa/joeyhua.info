@@ -42,73 +42,73 @@ let sectionContentsMap = [
     id: 'about',
     title: 'About',
     content:
-     <div className='section'>
-       <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
-       <h5><u>About Me</u></h5>
-        <p>
-          I'm currently an undergraduate student at UC Davis studying Computer Science and Managerial Economics. I enjoy web development, especially 
-          with ReactJS. Among my other interests are music production, audio engineering, video animation, and mountain biking. 
-        </p>
-        <br />
-        <h5><u>Resume</u></h5>
-        <div style={{fontWeight:'normal'}}>
+      <div className='section'>
+        <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
+          <h5><u>About Me</u></h5>
           <p>
-            Education: UC Davis | Class of 2022 | B.S. in Managerial Economics, Minor in CS
+            I'm currently an undergraduate student at UC Davis studying Computer Science and Managerial Economics. I enjoy web development, especially 
+            with ReactJS. Among my other interests are music production, audio engineering, video animation, and mountain biking. 
           </p>
-          <p>
-            Skills:
-            <ul>
-              <li>Languages: HTML, CSS, JavaScript, Python, Ruby on Rails</li>
-              <li>Tools/Frameworks: React, Node, Git, Webpack, Bootstrap, D3.js, SVG</li>
-            </ul>
-          </p>
-          <p>
-            Experience:
-            <ul>
-              <li>
-                <u>Center for Educational Effectiveness at UC Davis</u> <i>(Apr 2020 — Present)</i>
-                <br />
-                <strong>Web Developer</strong>
-                <ul>
-                  <li>Designed user-friendly charts using React and D3.js to help professors glean meaningful insights from lecture recordings.</li>
-                  <li>Used NLP libraries to parse and extract insights from lecture recording transcripts in React and Ruby on Rails.</li>
-                  <li>Integrated Zoom API to fetch lecture recording data, using OAuth 2.0 for user authentication.</li>
-                  <li>Incorporated dynamic React front end into an existing Ruby on Rails application.</li>
-                </ul>
-              </li>
-              <li>
-                <u>HackDavis 2020</u> <i>(Jan 2020)</i>
-                <br />
-                <strong>Team Leader</strong>
-                <ul>
-                  <li>Led a team of 3 students to complete a laptop recommendation application in Python.</li>
-                  <li>Generated project ideas and encouraged open communication among team members.</li>
-                  <li>Assisted teammates with debugging code.</li>
-                </ul>
-              </li>
-              <li>
-                <u>University of California</u> <i>(Nov 2019 — Mar 2020)</i>
-                <br />
-                <strong>Student Assistant III</strong>
-                <ul>
-                  <li>Researched reasons why advocacy groups sued University of California over the SAT.</li>
-                  <li>Web scraped data on 3000+ Bay Area rental units, 1000+ used vehicles from Kelley Blue Book, and standardized test data from 56 Bay Area counties using Python.</li>
-                </ul>
-              </li>
-              <li>
-                <u>SSB Basketball Academy</u> <i>(Jul 2019 — Dec 2019)</i>
-                <br />
-                <strong>Web & Graphic Designer</strong>
-                <ul>
-                  <li>Designed responsive website using HTML, CSS, and React, and 4 flyers using Adobe Illustrator.</li>
-                  <li>Developed logo prototypes and integrated a new logo to create a more child-centered brand identity.</li>
-                </ul>
-              </li>
-            </ul>
-          </p>
+          <br />
+          <h5><u>Resume</u></h5>
+          <div style={{fontWeight:'normal'}}>
+            <p>
+              Education: UC Davis | Class of 2022 | B.S. in Managerial Economics, Minor in CS
+            </p>
+            <p>
+              Skills:
+              <ul>
+                <li>Languages: HTML, CSS, JavaScript, Python, Ruby on Rails</li>
+                <li>Tools/Frameworks: React, Node, Git, Webpack, Bootstrap, D3.js, SVG</li>
+              </ul>
+            </p>
+            <p>
+              Experience:
+              <ul>
+                <li>
+                  <u>Center for Educational Effectiveness at UC Davis</u> <i>(Apr 2020 — Present)</i>
+                  <br />
+                  <strong>Web Developer</strong>
+                  <ul>
+                    <li>Designed user-friendly charts using React and D3.js to help professors glean meaningful insights from lecture recordings.</li>
+                    <li>Used NLP libraries to parse and extract insights from lecture recording transcripts in React and Ruby on Rails.</li>
+                    <li>Integrated Zoom API to fetch lecture recording data, using OAuth 2.0 for user authentication.</li>
+                    <li>Incorporated dynamic React front end into an existing Ruby on Rails application.</li>
+                  </ul>
+                </li>
+                <li>
+                  <u>HackDavis 2020</u> <i>(Jan 2020)</i>
+                  <br />
+                  <strong>Team Leader</strong>
+                  <ul>
+                    <li>Led a team of 3 students to complete a laptop recommendation application in Python.</li>
+                    <li>Generated project ideas and encouraged open communication among team members.</li>
+                    <li>Assisted teammates with debugging code.</li>
+                  </ul>
+                </li>
+                <li>
+                  <u>University of California</u> <i>(Nov 2019 — Mar 2020)</i>
+                  <br />
+                  <strong>Student Assistant III</strong>
+                  <ul>
+                    <li>Researched reasons why advocacy groups sued University of California over the SAT.</li>
+                    <li>Web scraped data on 3000+ Bay Area rental units, 1000+ used vehicles from Kelley Blue Book, and standardized test data from 56 Bay Area counties using Python.</li>
+                  </ul>
+                </li>
+                <li>
+                  <u>SSB Basketball Academy</u> <i>(Jul 2019 — Dec 2019)</i>
+                  <br />
+                  <strong>Web & Graphic Designer</strong>
+                  <ul>
+                    <li>Designed responsive website using HTML, CSS, and React, and 4 flyers using Adobe Illustrator.</li>
+                    <li>Developed logo prototypes and integrated a new logo to create a more child-centered brand identity.</li>
+                  </ul>
+                </li>
+              </ul>
+            </p>
+          </div>
         </div>
       </div>
-     </div>
   },
   {
     key: 2,
@@ -116,8 +116,35 @@ let sectionContentsMap = [
     title: 'Projects',
     content: 
       <div className='section'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6C1CKdaz-yA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iBr_JZUCGpY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
+          <a href="https://github.com/joeyhuaa/Origin" target="_blank">
+            <h5><u>Origin</u></h5>
+          </a>
+          <p>
+            Origin is a note-taking app I made earlier in 2020 that's meant to graphically imitate how our brains form connections and webs. A user would create a new node, write notes in it, and connect the dots (nodes) to form a kind of "brain map" that would represent all the notes/ideas he or she has taken. Although the idea seemed cool to me at the time, I found myself not using it at all since existing note-taking apps were easier to use, so I discontinued development. However, you can still find the source code above. 
+          </p>
+
+          <a href="https://github.com/joeyhuaa/Laptop-Recommend" target="_blank">
+            <h5><u>Laptop-Recommend</u></h5>
+          </a>
+          <p>
+            Laptop-Recommend is a Python app I made with a team at HackDavis 2020 that recommends laptops based on information the user provides. It's all terminal-based since we didn't have enough time to make a pretty front-end, but it works well. Our idea was to provide a feasible solution for money-tight college students in need of new laptops. Source code is available above. 
+          </p>
+
+          <a href="https://github.com/joeyhuaa/Flopper" target="_blank">
+            <h5><u>Flopper</u></h5>
+          </a>
+          <p>
+            I made Flopper because I was disappointed at the lack of a GUI in Texas-Hold-Em. Also, knowing general hand equities preflop was more important than simulating two hands against each other in a vacuum. Flopper is just a run-of-the-mill hand equity calculator, nothing too special, but it was a good programming exercise for me. 
+          </p>
+
+          <a href="https://github.com/joeyhuaa/Texas-Hold-Em" target="_blank">
+            <h5><u>Texas-Hold-Em</u></h5>
+          </a>
+          <p>
+            Back in freshman year when I was really into poker, I made a Python app named after the game itself (super creative, I know) that allows the user to run Monte Carlo simulations between any two starting hands. 
+          </p>
+        </div>
       </div>
   },
 ]
