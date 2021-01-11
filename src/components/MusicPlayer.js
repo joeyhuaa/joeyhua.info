@@ -1,5 +1,4 @@
 import React, {useState, useRef, useEffect} from 'react'
-
 import play from '../assets/play.png'
 import pause from '../assets/pause.png'
 import moment from 'moment'
@@ -9,10 +8,10 @@ export default function MusicPlayer({songs}) {
   let [currentSong, setCurrentSong] = useState(songs[Math.floor(Math.random() * songs.length)])
   let [currentTime, setCurrentTime] = useState(null)
 
-  useEffect(() => {
-    console.log(music.current.currentSrc)
-    console.log(music.current.src)
-  },[currentSong])
+  // useEffect(() => {
+  //   console.log(music.current.currentSrc)
+  //   console.log(music.current.src)
+  // },[currentSong])
 
   let music = useRef(null)
   let playHead = useRef(null)
