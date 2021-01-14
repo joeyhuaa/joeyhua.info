@@ -117,6 +117,13 @@ let sectionContentsMap = [
     content: 
       <div className='section'>
         <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
+          <a href="https://valorantfinance.live/" target="_blank">
+            <h5><u>ValorantFinance</u></h5>
+          </a>
+          <p>
+            ValorantFinance is a fun app I made for Valorant players who need help keeping track of their in-game finances, packed with Valorant-themed aesthetics and sound effects. The website simulates a normal Valorant game, allowing the user to make round-by-round decisions on what to buy/sell. Currently features all weapons and armor but doesn't include agent abilities. 
+          </p>
+
           <a href="https://github.com/joeyhuaa/Origin" target="_blank">
             <h5><u>Origin</u></h5>
           </a>
@@ -142,7 +149,7 @@ let sectionContentsMap = [
             <h5><u>Texas-Hold-Em</u></h5>
           </a>
           <p>
-            Back in freshman year when I was really into poker, I made a Python app named after the game itself (super creative, I know) that allows the user to run Monte Carlo simulations between any two starting hands. 
+            Back in freshman year when I was really into poker, I made a Python app that allows the user to run Monte Carlo simulations between any two starting hands. 
           </p>
         </div>
       </div>
