@@ -117,6 +117,13 @@ let sectionContentsMap = [
     content: 
       <div className='section'>
         <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
+          <a href="https://valorantfinance.live/" target="_blank">
+            <h5><u>ValorantFinance</u></h5>
+          </a>
+          <p>
+            ValorantFinance is a fun app I made for Valorant players who need help keeping track of their in-game finances, packed with Valorant-themed aesthetics and sound effects. The website simulates a normal Valorant game, allowing the user to make round-by-round decisions on what to buy/sell. Currently features all weapons and armor but doesn't include agent abilities. 
+          </p>
+
           <a href="https://github.com/joeyhuaa/Origin" target="_blank">
             <h5><u>Origin</u></h5>
           </a>
