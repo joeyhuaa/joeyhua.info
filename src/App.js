@@ -5,7 +5,7 @@ import NavLink from "./components/NavLink"
 import Section from "./components/Section"
 import Fade from "./components/Fade"
 import MusicPlayer from './components/MusicPlayer'
-import RandomPic from './components/RandomPic'
+import Pics from './components/Pics'
 
 import supernova from './assets/supernova.mp3'
 import soul_dance from './assets/soul_dance.mp3'
@@ -31,7 +31,7 @@ let sectionContentsMap = [
     title: 'Home',
     content: 
       <div className='section'>
-        <RandomPic pics={[prof_pic,headlightsnight,tylerbgb,tylerbp,tylerog,tylerrb,soulfection_art]} />
+        <Pics pics={[prof_pic,headlightsnight,tylerbgb,tylerbp,tylerog,tylerrb,soulfection_art]} />
         <h1 style={{marginTop:'1em'}}>Hi, I'm Joey.</h1>
         <span>Welcome to my website.</span>
         <span id='homepage-note' style={{fontSize:'12px'}}>[For best experience, stream my music below while exploring the site]</span>
@@ -121,7 +121,7 @@ let sectionContentsMap = [
             <h5><u>ValorantFinance</u></h5>
           </a>
           <p>
-            ValorantFinance is a fun app I made for Valorant players who need help keeping track of their in-game finances, packed with Valorant-themed aesthetics and sound effects. The website simulates a normal Valorant game, allowing the user to make round-by-round decisions on what to buy/sell. Currently features all weapons and armor but doesn't include agent abilities. 
+            ValorantFinance is a fun app I made for Valorant players who need help keeping track of their in-game finances, complete with Valorant-themed aesthetics and sound effects. The website simulates a normal Valorant game, allowing the user to make round-by-round decisions on what to buy/sell.
           </p>
 
           <a href="https://github.com/joeyhuaa/Origin" target="_blank">
