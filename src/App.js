@@ -128,21 +128,21 @@ let sectionContentsMap = [
             <h5><u>Laptop-Recommend</u></h5>
           </a>
           <p>
-            Laptop-Recommend is a Python app I made with a team at HackDavis 2020 that recommends laptops based on information the user provides. It's all terminal-based since we didn't have enough time to make a pretty front-end, but it works well. Our idea was to provide a feasible solution for money-tight college students in need of new laptops. Source code is available above. 
+            Laptop-Recommend is a Python app I made with a team at HackDavis 2020 that recommends laptops based on information the user provides. We wanted to provide a feasible solution for money-tight college students in need of new laptops. Source code is available above. 
           </p>
 
           <a href="https://github.com/joeyhuaa/Flopper" target="_blank">
             <h5><u>Flopper</u></h5>
           </a>
           <p>
-            I made Flopper because I was disappointed at the lack of a GUI in Texas-Hold-Em. Also, knowing general hand equities preflop was more important than simulating two hands against each other in a vacuum. Flopper is just a run-of-the-mill hand equity calculator, nothing too special, but it was a good programming exercise for me. 
+            I made Flopper because I was disappointed at the lack of a GUI in Texas-Hold-Em. Also, knowing general hand equities preflop was more important than simulating two hands against each other in a vacuum. Flopper allows the user to select a range of hands for two players and calculates equities for both ranges. 
           </p>
 
           <a href="https://github.com/joeyhuaa/Texas-Hold-Em" target="_blank">
             <h5><u>Texas-Hold-Em</u></h5>
           </a>
           <p>
-            Back in freshman year when I was really into poker, I made a Python app named after the game itself (super creative, I know) that allows the user to run Monte Carlo simulations between any two starting hands. 
+            Back in freshman year when I was really into poker, I made a Python app that allows the user to simulate as many game runouts as desired between two hands. 
           </p>
         </div>
       </div>
