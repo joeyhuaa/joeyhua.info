@@ -53,7 +53,7 @@ let sectionContentsMap = [
           <h5><u>Resume</u></h5>
           <div style={{fontWeight:'normal'}}>
             <p>
-              Education: UC Davis | Class of 2022 | B.S. in Managerial Economics, Minor in CS
+              Education: UC Davis | Class of 2022 | B.S. in Computer Science and Managerial Economics
             </p>
             <p>
               Skills:
