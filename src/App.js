@@ -128,7 +128,7 @@ let sectionContentsMap = [
             <h5><u>Origin</u></h5>
           </a>
           <p>
-            Origin is a note-taking app I made earlier in 2020 that's meant to graphically imitate how our brains form connections and webs. A user would create a new node, write notes in it, and connect the dots (nodes) to form a kind of "brain map" that would represent all the notes/ideas he or she has taken. Although the idea seemed cool to me at the time, I found myself not using it at all since existing note-taking apps were easier to use, so I discontinued development. However, you can still find the source code above. 
+            Origin is a note-taking app I made earlier in 2020 that's meant to graphically imitate how our brains form connections and webs. A user would create a new node, write notes in it, and connect the dots (nodes) to form a kind of "brain map" that would represent all the notes/ideas he or she has taken. You can find the source code above. 
           </p>
 
           <a href="https://github.com/joeyhuaa/Laptop-Recommend" target="_blank">
