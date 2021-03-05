@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 import NavLink from "./components/NavLink"
@@ -68,12 +68,12 @@ let sectionContentsMap = [
                 <li>
                   <u>Center for Educational Effectiveness at UC Davis</u> <i>(Apr 2020 — Present)</i>
                   <br />
-                  <strong>Web Developer</strong>
+                  <strong>Full Stack Developer</strong>
                   <ul>
+                    <li>Built a Reddit-like discussion forum for professors to discuss various topics related to teaching.</li>
                     <li>Designed user-friendly charts using React and D3.js to help professors glean meaningful insights from lecture recordings.</li>
                     <li>Used NLP libraries to parse and extract insights from lecture recording transcripts in React and Ruby on Rails.</li>
                     <li>Integrated Zoom API to fetch lecture recording data, using OAuth 2.0 for user authentication.</li>
-                    <li>Incorporated dynamic React front end into an existing Ruby on Rails application.</li>
                   </ul>
                 </li>
                 <li>
@@ -117,35 +117,35 @@ let sectionContentsMap = [
     content: 
       <div className='section'>
         <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
-          <a href="https://valorantfinance.live/" target="_blank">
+          <a href="https://valorantfinance.live/" target="_blank" rel="noopener noreferrer">
             <h5><u>ValorantFinance</u></h5>
           </a>
           <p>
             ValorantFinance is a fun app I made for Valorant players who need help keeping track of their in-game finances, complete with Valorant-themed aesthetics and sound effects. The website simulates a normal Valorant game, allowing the user to make round-by-round decisions on what to buy/sell.
           </p>
 
-          <a href="https://github.com/joeyhuaa/Origin" target="_blank">
+          <a href="https://github.com/joeyhuaa/Origin" target="_blank" rel="noopener noreferrer">
             <h5><u>Origin</u></h5>
           </a>
           <p>
             Origin is a note-taking app I made earlier in 2020 that's meant to graphically imitate how our brains form connections and webs. A user would create a new node, write notes in it, and connect the dots (nodes) to form a kind of "brain map" that would represent all the notes/ideas he or she has taken. You can find the source code above. 
           </p>
 
-          <a href="https://github.com/joeyhuaa/Laptop-Recommend" target="_blank">
+          <a href="https://github.com/joeyhuaa/Laptop-Recommend" target="_blank" rel="noopener noreferrer">
             <h5><u>Laptop-Recommend</u></h5>
           </a>
           <p>
             Laptop-Recommend is a Python app I made with a team at HackDavis 2020 that recommends laptops based on information the user provides. We wanted to provide a feasible solution for money-tight college students in need of new laptops. Source code is available above. 
           </p>
 
-          <a href="https://github.com/joeyhuaa/Flopper" target="_blank">
+          <a href="https://github.com/joeyhuaa/Flopper" target="_blank" rel="noopener noreferrer">
             <h5><u>Flopper</u></h5>
           </a>
           <p>
             I made Flopper because I was disappointed at the lack of a GUI in Texas-Hold-Em. Also, knowing general hand equities preflop was more important than simulating two hands against each other in a vacuum. Flopper allows the user to select a range of hands for two players and calculates equities for both ranges. 
           </p>
 
-          <a href="https://github.com/joeyhuaa/Texas-Hold-Em" target="_blank">
+          <a href="https://github.com/joeyhuaa/Texas-Hold-Em" target="_blank" rel="noopener noreferrer">
             <h5><u>Texas-Hold-Em</u></h5>
           </a>
           <p>
@@ -160,9 +160,6 @@ export default function App() {
   // using hooks to declare state variables 
   let [sectionIndex, setSectionIndex] = useState(0)
   let [show, setShow] = useState(true)
-
-  useEffect(() => {
-  })
 
   // functions
   let handleClick = (index) => {
