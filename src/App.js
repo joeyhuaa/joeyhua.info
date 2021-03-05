@@ -117,6 +117,13 @@ let sectionContentsMap = [
     content: 
       <div className='section'>
         <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
+          <a href="https://github.com/joeyhuaa/Untitled-News-Project-Frontend" target="_blank" rel="noopener noreferrer">
+            <h5><u>Project Solomon</u></h5>
+          </a>
+          <p>
+            Project Solomon is a news feed/news bias analysis project that I'm working on with 3 other programmers. Our goal is to present news in a way that discourages biased thinking and instead encourages impartial, critical, informed digestion of information. We hope to accomplish this by replacing recommendation algorithms with text analysis algorithms that inform readers about what they're reading. So far, I've built a front-end prototype with a team member, and we're currently working on data collection, pipelining, and NLP processes. 
+          </p>
+
           <a href="https://valorantfinance.live/" target="_blank" rel="noopener noreferrer">
             <h5><u>ValorantFinance</u></h5>
           </a>
