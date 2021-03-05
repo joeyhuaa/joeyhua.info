@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef} from 'react'
 import play from '../assets/play.png'
 import pause from '../assets/pause.png'
 import moment from 'moment'
