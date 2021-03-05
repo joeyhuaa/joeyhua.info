@@ -16,7 +16,7 @@ import soul_trip from './assets/soul_trip.mp3'
 
 import supernova_art from './assets/supernova.jpg'
 import soulfection_art from './assets/soulfection.jpg'
-import prof_pic from './assets/prof-pic-square.png'
+import prof_pic from './assets/prof-pic-square.jpg'
 import headlightsnight from './assets/headlightsnight.jpg'
 import tylerbgb from './assets/tylerbluegreenblack.jpg'
 import tylerbp from './assets/tylerbluepinkoutline.jpg'
