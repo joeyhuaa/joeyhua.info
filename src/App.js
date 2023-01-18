@@ -32,7 +32,7 @@ let sectionContentsMap = [
     content: 
       <div className='section'>
         <Pics pics={[prof_pic,headlightsnight,tylerbgb,tylerbp,tylerog,tylerrb,soulfection_art]} />
-        <h1 style={{marginTop:'1em'}}>Hi, I'm Joey.</h1>
+        <h1 style={{marginTop:'1em'}}>Hi, I'm Joey 🙂</h1>
         <span>Welcome to my website.</span>
         <span id='homepage-note' style={{fontSize:'12px'}}>[For best experience, stream my music below while exploring the site]</span>
       </div>
@@ -46,67 +46,10 @@ let sectionContentsMap = [
         <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
           <h5><u>About Me</u></h5>
           <p>
-            I'm currently an undergraduate student at UC Davis studying Computer Science and Managerial Economics. I enjoy web development, especially 
-            with ReactJS. Among my other interests are music production, audio engineering, video animation, and mountain biking. 
+            I'm a recent UC Davis grad with a major in Computational Cognitive Science. I enjoy web development, especially 
+            with ReactJS. I also love <a href='https://open.spotify.com/artist/1zEBlYdwmgdTZAOHE753V2?si=Q269eJMgSiS8RBwmp5OWoQ' target='_blank'>making music</a>, playing basketball, boxing, hiking, riding my bike, and talking about God. 
+            Here's my <a href='https://drive.google.com/file/d/0B5HPRhEFlpMwRVhlYWI0X0NfNGFCN0tiRzVyRmNfTUZ4RExJ/view?usp=sharing&resourcekey=0-LPxOcqhkqkPK6NA5hBrEaw' target='_blank'>resume</a>.
           </p>
-          <br />
-          <h5><u>Resume</u></h5>
-          <div style={{fontWeight:'normal'}}>
-            <p>
-              Education: UC Davis | Class of 2022 | B.S. in Computer Science and Managerial Economics
-            </p>
-            <p>
-              Skills:
-              <ul>
-                <li>Languages: HTML, CSS, JavaScript, Python, Ruby on Rails</li>
-                <li>Tools/Frameworks: React, Node, Git, Webpack, Bootstrap, D3.js, SVG</li>
-              </ul>
-            </p>
-            <p>
-              Experience:
-              <ul>
-                <li>
-                  <u>Center for Educational Effectiveness at UC Davis</u> <i>(Apr 2020 — Present)</i>
-                  <br />
-                  <strong>Full Stack Developer</strong>
-                  <ul>
-                    <li>Built a Reddit-like discussion forum for professors to discuss various topics related to teaching.</li>
-                    <li>Designed user-friendly charts using React and D3.js to help professors glean meaningful insights from lecture recordings.</li>
-                    <li>Used NLP libraries to parse and extract insights from lecture recording transcripts in React and Ruby on Rails.</li>
-                    <li>Integrated Zoom API to fetch lecture recording data, using OAuth 2.0 for user authentication.</li>
-                  </ul>
-                </li>
-                <li>
-                  <u>HackDavis 2020</u> <i>(Jan 2020)</i>
-                  <br />
-                  <strong>Team Leader</strong>
-                  <ul>
-                    <li>Led a team of 3 students to complete a laptop recommendation application in Python.</li>
-                    <li>Generated project ideas and encouraged open communication among team members.</li>
-                    <li>Assisted teammates with debugging code.</li>
-                  </ul>
-                </li>
-                <li>
-                  <u>University of California</u> <i>(Nov 2019 — Mar 2020)</i>
-                  <br />
-                  <strong>Student Assistant III</strong>
-                  <ul>
-                    <li>Researched reasons why advocacy groups sued University of California over the SAT.</li>
-                    <li>Web scraped data on 3000+ Bay Area rental units, 1000+ used vehicles from Kelley Blue Book, and standardized test data from 56 Bay Area counties using Python.</li>
-                  </ul>
-                </li>
-                <li>
-                  <u>SSB Basketball Academy</u> <i>(Jul 2019 — Dec 2019)</i>
-                  <br />
-                  <strong>Web & Graphic Designer</strong>
-                  <ul>
-                    <li>Designed responsive website using HTML, CSS, and React, and 4 flyers using Adobe Illustrator.</li>
-                    <li>Developed logo prototypes and integrated a new logo to create a more child-centered brand identity.</li>
-                  </ul>
-                </li>
-              </ul>
-            </p>
-          </div>
         </div>
       </div>
   },
@@ -117,25 +60,11 @@ let sectionContentsMap = [
     content: 
       <div className='section'>
         <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
-          <a href="https://github.com/joeyhuaa/Untitled-News-Project-Frontend" target="_blank" rel="noopener noreferrer">
-            <h5><u>Project Solomon</u></h5>
-          </a>
+          <h5><u style={{color: '#00a7ff'}}>SuperTonic</u> [<a href='https://github.com/joeyhuaa/supertonic-frontend' target='_blank'>frontend</a> | <a href='https://github.com/joeyhuaa/supertonic-backend' target='_blank'>backend</a>]</h5>
           <p>
-            Project Solomon is a news feed/news bias analysis project that I'm working on with 3 other programmers. Our goal is to present news in a way that discourages biased thinking and instead encourages impartial, critical, informed digestion of information. We hope to accomplish this by replacing recommendation algorithms with text analysis algorithms that inform readers about what they're reading. So far, I've built a front-end prototype with a team member, and we're currently working on data collection, pipelining, and NLP processes. 
-          </p>
-
-          <a href="https://valorantfinance.live/" target="_blank" rel="noopener noreferrer">
-            <h5><u>ValorantFinance</u></h5>
-          </a>
-          <p>
-            ValorantFinance is a fun app I made for Valorant players who need help keeping track of their in-game finances, complete with Valorant-themed aesthetics and sound effects. The website simulates a normal Valorant game, allowing the user to make round-by-round decisions on what to buy/sell.
-          </p>
-
-          <a href="https://github.com/joeyhuaa/Origin" target="_blank" rel="noopener noreferrer">
-            <h5><u>Origin</u></h5>
-          </a>
-          <p>
-            Origin is a note-taking app I made earlier in 2020 that's meant to graphically imitate how our brains form connections and webs. A user would create a new node, write notes in it, and connect the dots (nodes) to form a kind of "brain map" that would represent all the notes/ideas he or she has taken. You can find the source code above. 
+            SuperTonic is a NextJS/Ruby on Rails project management app for musicians, conceptually combining GitHub and Spotify. I was inspired by how GitHub provides easy
+            version control and collaboration, and Spotify provides aesthetic, seamless music streaming. As an artist and producer myself, I and my other music friends use Google Drive to store and share music,
+            which gets the job done, but Google Drive wasn't designed with music in mind. My dream for SuperTonic is that people in the music world will find in useful and intuitive to use for their projects so Google Drive won't have to be used anymore, lol 😂. 
           </p>
 
           <a href="https://github.com/joeyhuaa/Laptop-Recommend" target="_blank" rel="noopener noreferrer">

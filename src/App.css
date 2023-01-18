@@ -22,7 +22,8 @@ iframe {
 }
 
 a {
-  color: whitesmoke;
+  color: rgb(0, 255, 153);
+  text-decoration: underline;
 }
 
 div {
