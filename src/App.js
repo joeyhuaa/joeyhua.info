@@ -47,7 +47,7 @@ let sectionContentsMap = [
           <h5><u>About Me</u></h5>
           <p>
             I'm a recent UC Davis grad with a major in Computational Cognitive Science. I enjoy web development, especially 
-            with ReactJS. I also love <a href='https://open.spotify.com/artist/1zEBlYdwmgdTZAOHE753V2?si=Q269eJMgSiS8RBwmp5OWoQ' target='_blank'>making music</a>, playing basketball, boxing, hiking, riding my bike, and talking about God. 
+            with ReactJS. I also love <a href='https://open.spotify.com/artist/1zEBlYdwmgdTZAOHE753V2?si=Q269eJMgSiS8RBwmp5OWoQ' target='_blank'>making music</a>, playing basketball, boxing, and hiking. 
             Here's my <a href='https://drive.google.com/file/d/0B5HPRhEFlpMwRVhlYWI0X0NfNGFCN0tiRzVyRmNfTUZ4RExJ/view?usp=sharing&resourcekey=0-LPxOcqhkqkPK6NA5hBrEaw' target='_blank'>resume</a>.
           </p>
         </div>

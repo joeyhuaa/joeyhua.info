@@ -1,7 +1,7 @@
 {
   "name": "ssb-2.0",
   "version": "0.1.0",
-  "homepage": "https://joeyhuaa.github.io/joeyhua.info",
+  "homepage": "http://joeyhuaa.github.io/joeyhua.info",
   "private": true,
   "dependencies": {
     "google-maps-react": "^2.0.2",
