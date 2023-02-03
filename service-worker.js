@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/joeyhua.info/precache-manifest.5d40f837d7f8950c4713d82b140d6d4b.js"
+  "/joeyhua.info/precache-manifest.c2a56c18f3515eb8a430da792a1a5946.js"
 );
 
 self.addEventListener('message', (event) => {
