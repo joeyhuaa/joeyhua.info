@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64ada1a09c2d92c1f26806c6b0c12907",
+    "revision": "157e6b8d59f4d855f70c09e3e86a5963",
     "url": "/joeyhua.info/index.html"
   },
   {
-    "revision": "e8d84742e7213691aa66",
+    "revision": "b07906bcf97974962e5c",
     "url": "/joeyhua.info/static/css/main.b5acfdcf.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/joeyhua.info/static/js/2.43239bf5.chunk.js"
   },
   {
-    "revision": "e8d84742e7213691aa66",
-    "url": "/joeyhua.info/static/js/main.bff8c093.chunk.js"
+    "revision": "b07906bcf97974962e5c",
+    "url": "/joeyhua.info/static/js/main.89f2c06d.chunk.js"
   },
   {
     "revision": "3fccbd5f9ccaae9fd8a8",
