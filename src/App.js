@@ -47,7 +47,7 @@ let sectionContentsMap = [
           <p>
             I'm graduated from UC Davis in 2022 with a major in Computational Cognitive Science. I enjoy web development, especially 
             with ReactJS. I also love <a href='https://open.spotify.com/artist/1zEBlYdwmgdTZAOHE753V2?si=Q269eJMgSiS8RBwmp5OWoQ' target='_blank'>making music</a>, playing basketball, boxing, and hiking. 
-            Here's my <a href='https://drive.google.com/file/d/0B5HPRhEFlpMwRVhlYWI0X0NfNGFCN0tiRzVyRmNfTUZ4RExJ/view?usp=sharing&resourcekey=0-LPxOcqhkqkPK6NA5hBrEaw' target='_blank'>resume</a>.
+            Here's my <a href='https://drive.google.com/file/d/1Z7hHClz5XmhAYMit2mWk2_4SOmnDzGrf/view?usp=sharing' target='_blank'>resume</a>.
           </p>
           <p>
             You can contact me via email at joeyhua17@gmail.com. I can offer job references upon request!
