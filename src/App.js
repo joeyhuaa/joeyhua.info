@@ -45,8 +45,9 @@ let sectionContentsMap = [
         <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
           <h5><u>About Me</u></h5>
           <p>
-            I'm graduated from UC Davis in 2022 with a major in Computational Cognitive Science. I enjoy web development, especially 
-            with ReactJS. I also love <a href='https://open.spotify.com/artist/1zEBlYdwmgdTZAOHE753V2?si=Q269eJMgSiS8RBwmp5OWoQ' target='_blank'>making music</a>, playing basketball, boxing, and hiking. 
+            I'm graduated from UC Davis in 2022 with a major in Computational Cognitive Science. I enjoy making web apps and 
+            {' '}<a href='https://solo.to/joeyhua' target='_blank'>music</a>. 
+            Click on "Projects" to view some web apps I've made :)
             Here's my <a href='https://drive.google.com/file/d/1Z7hHClz5XmhAYMit2mWk2_4SOmnDzGrf/view?usp=sharing' target='_blank'>resume</a>.
           </p>
           <p>
@@ -62,28 +63,32 @@ let sectionContentsMap = [
     content: 
       <div className='section'>
         <div style={{textAlign:'left', paddingBottom:'200px', fontWeight:'normal'}}>
-          <h5><u style={{color: '#00a7ff'}}>SuperTonic</u> [<a href='https://github.com/joeyhuaa/supertonic-frontend' target='_blank'>frontend</a> | <a href='https://github.com/joeyhuaa/supertonic-backend' target='_blank'>backend</a>]</h5>
+          <h5>
+            <a id='supertonic-link' className="heading-link" href="https://supertonic-frontend.herokuapp.com/" target='_blank'>
+              <u>SuperTonic</u>
+            </a>{' '}
+            [<a href='https://github.com/joeyhuaa/supertonic-frontend' target='_blank'>frontend</a> | <a href='https://github.com/joeyhuaa/supertonic-backend' target='_blank'>backend</a>]</h5>
           <p>
             SuperTonic is a NextJS/Ruby on Rails project management app for musicians, conceptually combining GitHub and Spotify. I was inspired by how GitHub provides easy
             version control and collaboration, and Spotify provides aesthetic, seamless music streaming. As an artist and producer myself, I and my other music friends use Google Drive to store and share music,
             which gets the job done, but Google Drive wasn't designed with music in mind. My dream for SuperTonic is that people in the music world will find in useful and intuitive to use for their projects so Google Drive won't have to be used anymore, lol 😂. 
           </p>
 
-          <a href="https://github.com/joeyhuaa/Laptop-Recommend" target="_blank" rel="noopener noreferrer">
+          <a className="heading-link" href="https://github.com/joeyhuaa/Laptop-Recommend" target="_blank" rel="noopener noreferrer">
             <h5><u>Laptop-Recommend</u></h5>
           </a>
           <p>
             Laptop-Recommend is a Python app I made with a team at HackDavis 2020 that recommends laptops based on information the user provides. We wanted to provide a feasible solution for money-tight college students in need of new laptops. Source code is available above. 
           </p>
 
-          <a href="https://github.com/joeyhuaa/Flopper" target="_blank" rel="noopener noreferrer">
+          <a className="heading-link" href="https://github.com/joeyhuaa/Flopper" target="_blank" rel="noopener noreferrer">
             <h5><u>Flopper</u></h5>
           </a>
           <p>
             I made Flopper because I was disappointed at the lack of a GUI in Texas-Hold-Em. Also, knowing general hand equities preflop was more important than simulating two hands against each other in a vacuum. Flopper allows the user to select a range of hands for two players and calculates equities for both ranges. 
           </p>
 
-          <a href="https://github.com/joeyhuaa/Texas-Hold-Em" target="_blank" rel="noopener noreferrer">
+          <a className="heading-link" href="https://github.com/joeyhuaa/Texas-Hold-Em" target="_blank" rel="noopener noreferrer">
             <h5><u>Texas-Hold-Em</u></h5>
           </a>
           <p>

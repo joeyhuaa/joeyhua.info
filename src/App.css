@@ -13,6 +13,14 @@ h1{
   font-weight: bold;
 }
 
+#supertonic-link {
+  color: rgb(255, 90, 133);;
+}
+
+.heading-link:hover, #supertonic-link:hover {
+  color: yellow;
+}
+
 a:hover {
   text-decoration: none;
 }
